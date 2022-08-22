@@ -1,0 +1,34 @@
+/* Recolour the interface to dark grey */
+body.night-mode,
+body.night-mode .app-main,
+body.night-mode .header-main,
+body.night-mode #tab_bar_underpadding,
+body.night-mode .floating_recipient .message-header-wrapper,
+body.night-mode .column-middle,
+body.night-mode #compose,
+body.night-mode .column-left .left-sidebar,
+body.night-mode .column-right .right-sidebar,
+body.night-mode #subscription_overlay .right,
+body.night-mode #settings_page .form-sidebar,
+body.night-mode #settings_page .right,
+body.night-mode li.active-filter,
+body.night-mode li.active-sub-filter,
+body.night-mode .date_row,
+body.night-mode .message_row,
+body.night-mode .rendered_markdown .codehilite code,
+body.night-mode .rendered_markdown .codehilite pre,
+body.night-mode .dropdown-menu ul,
+body.night-mode .dropdown .dropdown-menu,
+body.night-mode .popover,
+body.night-mode .popover-title,
+body.night-mode .popover-content {
+    background: #262626 !important;
+}
+
+body.night-mode .private-message .messagebox {
+    background: #303030 !important;
+}
+
+body.night-mode .selected_message .messagebox-content {
+    box-shadow: none !important;
+}

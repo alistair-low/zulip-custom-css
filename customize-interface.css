@@ -1,0 +1,36 @@
+/* Hide some left sidebar items that I don't care about.
+   ----------------------------------------------------- */
+.top_left_all_messages,
+.top_left_mentions,
+.top_left_starred_messages,
+#add-stream-link {
+    display: none !important;
+}
+
+
+/* Make the expanded private messages container larger.
+   ---------------------------------------------------- */
+#private-container {
+    /* Electron doesn't seem to support this yet. */
+	/*max-height: calc(100% - 10em) !important;*/
+    max-height: 50em !important;
+}
+
+
+/* Display muted streams after non-muted ones.
+   ------------------------------------------- */
+#stream_filters {
+    display:flex;
+    flex-direction: column;
+}
+
+.narrow-filter.out_of_home_view {
+    order: 100;
+}
+
+
+/* Hide (rather than grey out) people who can't see messages in a stream.
+   ---------------------------------------------------------------------- */
+.user_sidebar_entry.user-fade {
+    display:none;
+}
