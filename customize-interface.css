@@ -1,24 +1,26 @@
 /* Hide some left sidebar items that I don't care about.
    ----------------------------------------------------- */
+.top_left_recent_topics,
 .top_left_all_messages,
 .top_left_mentions,
 .top_left_starred_messages,
-#add-stream-link {
-    display: none !important;
+.streams_filter_icon,
+#subscribe-to-more-streams,
+#show_all_private_messages,
+#compose-send-button,
+.enter_sends {
+    display: none;
 }
 
-
-/* Make the expanded private messages container larger.
-   ---------------------------------------------------- */
-#private-container {
-    /* Electron doesn't seem to support this yet. */
-	/*max-height: calc(100% - 10em) !important;*/
-    max-height: 50em !important;
+.narrow_description {
+    visibility: hidden;
 }
 
 
 /* Display muted streams after non-muted ones.
-   ------------------------------------------- */
+   -------------------------------------------
+   I haven't checked whether this still works in Zulip 6.0. */
+
 #stream_filters {
     display:flex;
     flex-direction: column;

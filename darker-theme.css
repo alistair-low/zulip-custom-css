@@ -1,34 +1,61 @@
-/* Recolour the interface to dark grey */
-body.night-mode,
-body.night-mode .app-main,
-body.night-mode .header-main,
-body.night-mode #tab_bar_underpadding,
-body.night-mode .floating_recipient .message-header-wrapper,
-body.night-mode .column-middle,
-body.night-mode #compose,
-body.night-mode .column-left .left-sidebar,
-body.night-mode .column-right .right-sidebar,
-body.night-mode #subscription_overlay .right,
-body.night-mode #settings_page .form-sidebar,
-body.night-mode #settings_page .right,
-body.night-mode li.active-filter,
-body.night-mode li.active-sub-filter,
-body.night-mode .date_row,
-body.night-mode .message_row,
-body.night-mode .rendered_markdown .codehilite code,
-body.night-mode .rendered_markdown .codehilite pre,
-body.night-mode .dropdown-menu ul,
-body.night-mode .dropdown .dropdown-menu,
-body.night-mode .popover,
-body.night-mode .popover-title,
-body.night-mode .popover-content {
-    background: #262626 !important;
+/* Recolour the interface to dark grey.
+   -------------------------------------------
+   See https://github.com/zulip/zulip/blob/main/static/styles/dark_theme.css. */
+
+body.dark-theme,
+body.dark-theme code,
+body.dark-theme #app-loading,
+body.dark-theme #compose,
+body.dark-theme #feedback_container,
+body.dark-theme #groups_overlay .right,
+body.dark-theme #message_view_header_underpadding,
+body.dark-theme #recent_topics_table tr,
+body.dark-theme #settings_page .right,
+body.dark-theme #streams_header,
+body.dark-theme #subscription_overlay .right,
+body.dark-theme .active-filter,
+body.dark-theme .app-main,
+body.dark-theme .bottom_left_row,
+body.dark-theme #recent_filters_group .btn-recent-filters,
+body.dark-theme .column-left .left-sidebar,
+body.dark-theme .column-middle,
+body.dark-theme .column-right .right-sidebar,
+body.dark-theme .dropdown-menu,
+body.dark-theme .dropdown-menu ul,
+body.dark-theme .dropdown .dropdown-menu,
+body.dark-theme .floating_recipient .message-header-wrapper,
+body.dark-theme .header-main,
+body.dark-theme .modal-bg,
+body.dark-theme .modal__container,
+body.dark-theme .popover,
+body.dark-theme .popover-content,
+body.dark-theme .popover-title,
+body.dark-theme .private_messages_container,
+body.dark-theme .private-message .date_row,
+body.dark-theme .private-message .messagebox,
+body.dark-theme .app-main .column-middle .recent_topics_container,
+body.dark-theme .rendered_markdown .codehilite code,
+body.dark-theme .rendered_markdown .codehilite pre,
+body.dark-theme .table-striped tbody tr:nth-child(n) td,
+body.dark-theme .tippy-box[data-theme~="light-border"],
+body.dark-theme .typeahead.dropdown-menu {
+    background-color: #262626 !important;
 }
 
-body.night-mode .private-message .messagebox {
-    background: #303030 !important;
+body.dark-theme #recent_topics_table table thead th,
+body.dark-theme #recent_topics_table table thead th[data-sort]:hover,
+body.dark-theme #recent_filters_group .btn-recent-selected,
+body.dark-theme #recent_filters_group .btn-recent-selected:hover {
+    background-color: #1b1b1b !important;
 }
 
-body.night-mode .selected_message .messagebox-content {
+body.dark-theme #groups_overlay #user-group-creation #user_group_creation_form #user_group_creating_indicator:not(:empty),
+body.dark-theme #subscription_overlay #stream-creation #stream_creation_form #stream_creating_indicator:not(:empty),
+body.dark-theme .emoji-info-popover .emoji-popover .emoji-popover-emoji:not(.reacted):focus,
+body.dark-theme div.overlay {
+    background-color: hsla(0, 0%, 0%, 0.75) !important;
+}
+
+body.dark-theme .selected_message .messagebox-content {
     box-shadow: none !important;
 }
